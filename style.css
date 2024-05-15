@@ -1,0 +1,551 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+.container{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Sidebarlateralesquerda */
+.sidebar{
+    height: auto;
+    width: calc(100% -250px);
+    background-color: #fff;
+    position: fixed;
+    height: 100%;
+    z-index: 3;
+}
+.sideh{
+    padding: 16px 0px;
+}
+.sideh h3{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 10px 0px;
+}
+.sidebarbotoes ul{
+    list-style-type: none;
+    padding: 20px 0px;
+    padding-bottom: 64px;
+    width: 200px;
+    
+}
+#jeans{
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 180px;
+}
+#skinny{
+    background-color: #f1f1f1;
+    width: 147px;
+}
+.botao{
+    padding: 8px 16px;
+}
+.botao:hover{
+    background-color: #f1f1f1;
+}
+.sidebarbotoes a{
+    text-decoration: none;
+    color: black;
+}
+.botao{
+   display: block;
+   font-size: 18px;
+   font-weight: bold;
+}
+.botao p{
+    margin: 0px;
+}
+.sidebarbotoes p{
+    padding: 4px 0px;
+}
+.sidebarbotoes p:hover{
+    background-color: #f1f1f1
+}
+/* Conteudo */
+.content{
+    height: auto;
+    width: 950px;
+    margin-left: 250px;
+    z-index: 1;
+}
+/* navbar responsiva */
+.navbar{
+    background-color: #000;
+    color: #fff;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    z-index: 3;
+    position: fixed;
+    width: 950px;
+}
+.navbar h3{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 10px 0px;
+    padding: 0px 16px;
+}
+.navbar a{
+    font-size: 34px; 
+    padding: 0px 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.overlay{
+    width: 100%;
+    height: 3000px;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
+    position: fixed;
+    display: none;
+}
+/* header */
+header{
+    padding: 0px 16px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+header p{
+    margin: 24px 0px;
+}
+/* primeiro conteudo */
+.contentprimeiro{
+    position: relative;
+}
+.contentprimeiro img{
+    width: 100%;
+    height:100%;
+}
+.textoum{
+    padding: 24px 48px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+}
+.arrivals{
+    font-size: 64px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.collection{
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.shop{
+    padding: 15px 0px;
+}
+.shop a:hover{
+    background-color: #f1f1f1;
+    color: #000;
+}
+.textoum a{
+    padding: 12px 24px;
+    background-color: #000;
+    font-size: 18px;
+}
+/* segundo conteudo */
+.containersegundo{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: auto;
+    justify-content: space-evenly;
+    gap: 11px;
+}
+.colunas{
+    filter: grayscale(75%);
+    width: 205px;
+    height: 350px;
+}
+.colunas div{
+    width: 200px;
+    height: 350px;
+}
+.colunas img{
+    width: 100%;
+    height: auto;
+}
+.topleft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+#img:hover ~ .buynow {
+    display: block;
+}
+#img2:hover ~ .buynow {
+    display: block;
+}
+.buynow{
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #fff ;
+    background-color: #000 ;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    padding: 8px ;
+    cursor: pointer;
+}
+.buynow:hover{
+    display: block;
+    background-color: #f1f1f1;
+    color: #000;
+}
+/* terceiro conteudo */
+.containerterceiro{
+    background-color: black;
+    width: 100%;
+    height: 290px;
+    color: white;
+}
+.contentterceiro{
+    padding: 32px 8px;
+    margin: 20px;
+}
+.contentterceiro h1{
+    font-weight: 400;
+    margin: 10px 0px;
+    font-size: 36px;
+}
+.contentterceiro p{
+    font-size: 15px;
+    margin: 15px 0px;
+}
+.contentterceiro input{
+    padding: 12px 0px 12px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contentterceiro button{
+    color: #fff;
+    background-color: #f44336;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    font: inherit;
+    border: none;
+}
+.contentterceiro button:hover{
+    background-color: #f1f1f1;
+    color: #000;
+}
+/* quarto conteudo */
+.containerquarto{
+    height: 400px;
+    padding: 64px 0px;
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-content: space-evenly;
+}
+.contentquarto{
+    justify-self: center;
+    text-align: center;
+}
+.contentquartoultimo{
+    justify-self: center;
+}
+.contentquarto p{
+    font-size: 12px;
+    color: #000
+}
+.contentquarto a{
+    color: #000
+}
+.contentquartoprimeiro{
+    width: 200px;
+    justify-self: center;
+    text-align: center;
+}
+.contentquartoprimeiro input{
+    border: 1px solid #ccc;
+    font: inherit;
+    margin: 0;
+    padding: 8px; 
+    width: 92%;
+}
+.contentquartoprimeiro button{
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    border: hidden;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-weight: inherit;
+    font-size: 13px;
+}
+.botaosend:hover{
+    background-color: #a6a6a6;
+    color: #000;
+}
+.contentquartoultimo p{
+    font-size: 12px;
+}
+.contentquartoultimo h4{
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000;
+}
+.contentquartoultimo i:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* final do footer */
+.powered{
+    padding: 24px 24px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.powered a{
+    color: #fff;
+}
+
+/* Media */
+
+@media screen and (max-width: 1250px) {
+    .content{
+        height: auto;
+        width: 1250px;
+        margin-left: 0px;
+    }
+    .navbar{
+        width: 1250px;
+        display: flex;
+    }
+    .sidebar{
+        display: none;
+        width: 275px;
+        padding-left: 25px;
+    }
+    .sideh h3{
+        font-size: 40px;
+    }
+    .sidebarbotoes i{
+        font-size: 15px;
+    }
+    .container{
+        position: relative;
+        display: flex;
+        width: 1250px;
+        height: auto;
+        align-content: center;
+    }
+    .contentprimeiro{
+        padding: 0px 16px;
+    }
+    .contentprimeiro img{
+        width: 100%;
+        align-content: center;
+        height:100%;
+    }
+    .contentprimeiro img{
+        width: 100%;
+    }
+    header p{
+        font-size: 34px;
+        padding-top: 120px;
+    }
+    .textoum{
+        padding: 24px 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+    }
+    .arrivals{
+        font-size: 86px;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    .collection{
+        display: none;
+    }
+    .shop{
+        font-size: 48px;
+        padding: 16px 0px;
+    }
+    .contentsegundo{
+        padding: 0px 16px;
+    }
+    .containersegundo{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        width: auto;
+        justify-content: space-evenly;
+        gap: 11px;
+        padding: 15px;
+        font-size: 18px;
+    }
+    .colunas{
+        filter: grayscale(75%);
+        width: 325px;
+        height: 475px;
+    }
+    .colunas div{
+        width: 325px;
+        height: 475px;
+    }
+    .colunas img{
+        width: 100%;
+        height: auto;
+    }
+    .topleft{
+        font-size: 30px;
+    }
+    .buynow{
+        top: 50%;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .content{
+        height: auto;
+        width: 1080px;
+        margin-left: 0px;
+    }
+    .navbar{
+        width: 1080px;
+        display: flex;
+    }
+    .navbar h3, i{
+        font-size: 40px;
+    }
+    .sidebar{
+        display: none;
+        width: 350px;
+        padding-left: 50px;
+    }
+    .sidebarbotoes{
+        font-size: 30px;
+    }
+    .sidebarbotoes a{
+        font-size: 20px;
+    }
+    .sideh h3{
+        font-size: 60px;
+    }
+    .sidebarbotoes i{
+        font-size: 15px;
+    }
+    .container{
+        position: relative;
+        display: flex;
+        width: 1080px;
+        height: auto;
+        align-content: center;
+    }
+    .contentprimeiro{
+        padding: 0px 16px;
+    }
+    .contentprimeiro img{
+        width: 100%;
+        align-content: center;
+        height:100%;
+    }
+    .sidebar{
+        display: none;
+    }
+    .contentprimeiro img{
+        width: 100%;
+    }
+    header p{
+        font-size: 34px;
+        padding-top: 120px;
+    }
+    .textoum{
+        padding: 24px 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+    }
+    .arrivals{
+        font-size: 86px;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    .collection{
+        display: none;
+    }
+    .shop{
+        font-size: 58px;
+        padding: 16px 0px;
+    }
+    .contentprimeiro p{
+        font-size: 25px;
+    }
+    .contentsegundo{
+        padding: 0px 16px;
+    }
+    .containersegundo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: auto;
+        height: 70%;
+        justify-content: space-evenly;
+        gap: 11px;
+        padding: 15px;
+        font-size: 25px;
+    }
+    .colunas{
+        filter: grayscale(75%);
+        width: 500px;
+        height: 600px;
+    }
+    .colunas img{
+        width: 100%;
+        height: auto;
+    }
+    .topleft{
+        font-size: 30px;
+    }
+    .containerquarto{
+        height: 600px;
+        padding: 64px 0px;
+        background-color: #f1f1f1;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        justify-content: space-evenly;
+    }
+    .containerquarto h4{
+        font-size: 30px;
+    }
+    .contentquarto p{
+        font-size: 20px;
+        color: #000
+    }
+    .buynow{
+        top: 50%;
+        font-size: 25px;
+    }
+}

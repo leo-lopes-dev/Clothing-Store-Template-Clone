@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra na lateral esquerda -->
+        <div class="sidebar" id="sidebar">
+            <div class="sideh"><h3><b>LOGO</b></h3></div>
+            <div class="sidebarbotoes">
+                <ul>
+                    <li><a href="#" class="botao">Shirts</a></li>
+                    <li><a href="#" class="botao">Dresses</a></li>
+                    <li><a href="#" class="botao"><p onclick="jeans()">Jeans <i class="bi bi-caret-down-fill"></i></p></a> 
+                            <ul id="jeans">
+                                <li><a href="#" id="skinny" class="botao"><i class="bi bi-caret-right-fill"></i> Skinny</a></li>
+                                <li><a href="#" class="botao">Relaxed</a></li>
+                                <li><a href="#" class="botao">Bootcut</a></li>
+                                <li><a href="#" class="botao">Straight</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="#" class="botao">Jackets</a></li>
+                    <li><a href="#" class="botao">Gymwear</a></li>
+                    <li><a href="#" class="botao">Blazers</a></li>
+                    <li><a href="#" class="botao">Shoes</a></li>
+                </ul>
+                <p><a href="#">Contact</a></p>
+                <p><a href="#">Newsletter</a></p>
+                <p><a href="#">Subscribe</a></p>
+            </div>
+        </div>
+        <!-- conteúdo da página -->
+        <div class="content">
+            <!-- Navbar responsiva -->
+            <div class="overlay" id="overlay"></div>
+            <div class="navbar">
+                <h3>LOGO</h3>
+                <p onclick="abrasidebar()"><a id="navbotao"><i onclick="overlay()" class="bi bi-list"></i></a></p>
+            </div>
+            <!-- header -->
+            <header>
+                <p>Jeans</p>
+                <p>
+                    <i class="bi bi-cart3"></i>
+                    <i class="bi bi-search"></i>
+                </p>
+            </header>
+            <!-- Conteúdo até o fim da imagem 1 -->
+            <div class="contentprimeiro">
+                <img src="jeans.jpg" alt="jeans">
+                <div class="textoum">
+                    <h1 class="arrivals">New arrivals</h1>
+                    <h1 class="collection">COLLECTION 2016</h1>
+                    <p class="shop"><a>SHOP NOW</a></p>
+                </div>
+                <p>8 items</p>
+            </div>
+            <!-- itens -->
+            <div class="containersegundo">
+                <div class="colunas">
+                    <img src="jeans1ripped.jpg" alt="calças">
+                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+                </div>
+                <div class="colunas">
+                    <p class="topleft">New</p>
+                    <img src="jeans2megaripped.jpg" alt="calças" id="img">
+                    <button class="buynow">Buy now <i class="bi bi-cart3"></i></button>
+                    <p>Ripped Skinny Jeans<br><b>$19.99</b></p>
+                </div>
+                <div class="colunas">
+                    <img src="jeans3washed.jpg" alt="calças">
+                    <p>Ripped Skinny Jeans<br><b>$20.50</b></p>
+                </div>
+                <div class="colunas">
+                    <img src="jeans4vintage.jpg" alt="calças">
+                    <p>Ripped Skinny Jeans<br><b>$14.99</b></p>
+                </div>
+                <div class="colunas">
+                    <img src="jeans2megaripped.jpg" alt="calças">
+                    <p>Ripped Skinny Jeans<br><b>$19.99</b></p>
+                </div>
+                <div class="colunas">
+                    <img src="jeans3washed.jpg" alt="calças">
+                    <p>Ripped Skinny Jeans<br><b>$20.50</b></p>
+                </div>
+                <div class="colunas">
+                    <p class="topleft">Sale</p>
+                    <img src="jeans4vintage.jpg" alt="calças" id="img2">
+                    <button class="buynow">Buy now <i class="bi bi-cart3"></i></button>
+                    <p>Ripped Skinny Jeans<br><b>$14.99</b></p>
+                </div>
+                <div class="colunas">
+                    <img src="jeans1ripped.jpg" alt="calças">
+                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+                </div>
+            </div>
+            <!-- subscribe -->
+            <div class="containerterceiro">
+                <div class="contentterceiro">
+                    <h1>Subscribe</h1>
+                    <p>To get special offers and VIP treatment:</p>
+                    <p>
+                        <input type="text" placeholder="Enter e-mail">
+                    </p>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <!-- contato -->
+            <footer class="containerquarto">
+                <div class="contentquartoprimeiro">
+                    <h4>Contact</h4>
+                    <p>Questions? Go ahead.</p>
+                    <form>
+                        <p><input type="text" placeholder="Name" name="name" required></p>
+                        <p><input type="text" placeholder="Email" name="email" required></p>
+                        <p><input type="text" placeholder="Subject" name="subject" required></p>
+                        <p><input type="text" placeholder="Message" name="message" required></p>
+                        <button type="submit" class="botaosend">Send</button>
+                    </form>
+                </div>
+                <div class="contentquarto">
+                    <h4>About</h4>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">We're hiring</a></p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">Find store</a></p>
+                    <p><a href="#">Shipment</a></p>
+                    <p><a href="#">Payment</a></p>
+                    <p><a href="#">Gift card</a></p>
+                    <p><a href="#">Return</a></p>
+                    <p><a href="#">Help</a></p>
+                </div>
+                <div class="contentquartoultimo">
+                    <h4>Store</h4>
+                    <p><i class="bi bi-geo-alt-fill"></i> Company Name</p>
+                    <p><i class="bi bi-telephone-fill"></i> 0044123123</p>
+                    <p><i class="bi bi-envelope-fill"></i> ex@mail.com</p>
+                    <h4>We accept</h4>
+                    <p><i class="bi bi-credit-card-2-front"></i> Amex</p>
+                    <p><i class="bi bi-credit-card"></i> Credit Card</p>
+                    <br>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-snapchat"></i>
+                    <i class="bi bi-pinterest"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-linkedin"></i>
+                </div>
+            </footer>
+            <!-- fontes -->
+            <div class="powered">
+                <p>Powered by <a href="https://github.com/usuanum70" target="_blank">@Me!</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
